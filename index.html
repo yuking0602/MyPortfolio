@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Protfolio</title>
+  <!-- reset.css modern-css-reset -->
+<link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css"/>
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <div class="header-wrapper">
+      <h1>My Work</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Work</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- /header -->
+
+  <!-- about -->
+  <section id="about">
+    <h2 class="section-title">About</h2>
+    <div class="about-wrapper">
+      <img src="img/about.jpg" alt="顔写真">
+      <div class="about-right">
+        <dl>
+          <dt>Name</dt>
+          <dd>Yuki</dd>
+          <dt>Age</dt>
+          <dd>26</dd>
+          <dt>Message</dt>
+          <dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+  <!-- /about -->
+
+  <!-- works -->
+  <section id="works">
+    <h2 class="section-title">Works</h2>
+    <div class="works-wrapper">
+      <img src="img/work1.jpg" alt="紅葉">
+      <img src="img/work2.jpg" alt="桜">
+      <img src="img/work3.jpg" alt="ご飯">
+      <img src="img/work4.jpg" alt="富士山">
+    </div>
+  </section>
+  <!-- /works -->
+
+  <!-- news -->
+  <section id="news">
+    <h2 class="section-title">News</h2>
+    <div class="news-wrapper">
+      <p><time>2024.04</time>体調も安定してきたので、社会復帰のために準備を進める</p>
+      <p><time>2023.09</time>体調を崩して実家に戻る。約半年実家で療養をしている</p>
+      <p><time>2021.04</time>東京の専門学校に入学。上京し一人暮らしをするが一年で退学。退学後はアルバイトをしていた。</p>
+      <p><time>2016.03</time>高校を何とか卒業した後、祖父母の介護をしつつ、自宅療養を続ける</p>
+      <p><time>2015.11</time>統合失調症のため、精神科の閉鎖病棟に入院する。三ヶ月で退院</p>
+    </div>
+  </section>
+  <!-- /news -->
+
+  <!-- contact -->
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <form>
+      <table class="contact-table">
+        <tr>
+          <th><label for="name">Name</label></th>
+          <td><input type="text" id="name" name="name"></td>
+        </tr>
+        <tr>
+          <th><label for="email">Email</label></th>
+          <td><input type="email" id="email" name="email"></td>
+        </tr>
+        <tr>
+          <th><label for="message">Message</label></th>
+          <td><textarea name="message" id="message" ></textarea></td>
+        </tr>
+      </table>
+      <input class="btn" type="submit" value="送信">
+    </form>
+  </section>
+  <!-- /contact -->
+
+  <!-- footer -->
+  <footer>
+    <small>&copy; 2024 Yuki</small>
+  </footer>
+  <!-- /footer -->
+</body>
+</html>

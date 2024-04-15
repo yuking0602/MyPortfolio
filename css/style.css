@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+/* 共通 */
+body {
+  font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+}
+.section-title {
+  color: #555;
+  font-size: 36px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+/* header */
+header {
+  background-image: url(/img/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1000px;
+  margin: 0 auto 64px;
+}
+.header-wrapper {
+  max-width: auto;
+  display: flex;
+  height: 300px;
+  align-items: center;
+  justify-content: space-around;
+}
+.header-wrapper h1 {
+  color: rgb(14, 69, 199);
+  font-size: 48px;
+}
+.header-wrapper ul li {
+  list-style: none;
+  display: inline-block;
+}
+.header-wrapper ul {
+  padding: 0;
+}
+.header-wrapper ul li + li {
+  margin-left: 20px;
+}
+.header-wrapper ul li a {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+.header-wrapper nav ul li a:hover {
+  color: rgb(124, 194, 226);
+}
+
+/* about */
+.about-wrapper {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.about-wrapper img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+.about-right {
+  max-width: 500px
+}
+.about-right dl dd {
+  padding-bottom: 16px;
+}
+
+/* works */
+#works {
+  max-width: 800px;
+  margin: 64px auto 0;
+}
+.works-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  padding-top: 40px;
+}
+.works-wrapper img {
+  height: 200px;
+}
+
+/* news */
+#news {
+  max-width: 800px;
+  margin: 64px auto 0;
+}
+.news-wrapper {
+  padding-top: 40px;
+}
+.news-wrapper p {
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  line-height: 40px;
+  padding: 8px 0;
+}
+.news-wrapper p + p {
+  border-top: 0;
+  border-bottom: 1px solid #999;
+}
+
+/* contact */
+#contact {
+  max-width: 800px;
+  margin: 64px auto 0;
+}
+#contact form {
+  max-width: 600px;
+  margin: 40px auto 0;
+}
+#contact form table {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 32px;
+}
+th {
+  text-align: left;
+}
+th label,
+td input {
+  padding-bottom: 16px;
+}
+.contact-table tr td input,
+.contact-table tr td textarea {
+  width: 400px;
+}
+.contact-table tr td textarea {
+  padding: 24px 0;
+}
+.btn {
+  padding: 8px 32px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: #111;
+  color: #fff;
+}
+.btn:hover {
+  opacity: .5;
+}
+
+/* footer */
+footer {
+  padding: 64px 0 32px 0;
+  text-align: center;
+}
+
+/* メディアクエリ */
+@media screen and (max-width:600px) {
+  /* 600px以下の記述をする */
+  .header-wrapper {
+    flex-direction: column;
+    height: 200px;
+  }
+  .about-wrapper {
+    flex-direction: column;
+  }
+  .about-wrapper img {
+    margin: 0 auto;
+  }
+  .about-right {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .works-wrapper {
+    flex-direction: column;
+    padding-top: 40px;
+  }
+  .works-wrapper img {
+    height: 300px;
+    margin: 0 4%;
+  }
+  .contact-table tr {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  input,
+  textarea {
+    max-width: 300px;
+  }
+}
