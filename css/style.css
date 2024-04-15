@@ -18,7 +18,7 @@ body {
 
 /* header */
 header {
-  background-image: url(https://github.com/yuking0602/MyProtfolio/blob/main/img/header.jpg);
+  background-image: url(../img/header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 1000px;
